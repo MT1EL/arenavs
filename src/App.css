@@ -1,38 +1,565 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Nunito;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 0px 5px 0px #e2e8f0;
+  z-index: 9999;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.innerNav {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+.logo {
+  width: min(70px, 20vw);
+  height: min(70px, 20vw);
+}
+@media (max-width: 170px) {
+  .logo {
+    display: none;
   }
 }
+.links {
+  display: none;
+}
+.bars::before {
+  content: " ";
+  background-color: black;
+  display: block;
+  position: absolute;
+  top: -0.5em;
+  width: min(25px, 10vw);
+  height: 3px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.bars {
+  position: relative;
+  display: flex;
+  width: min(15px, 6vw);
+  margin-inline: 22.5px;
+  height: 3px;
+  background-color: black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.bars::after {
+  content: " ";
+  background-color: black;
+  display: block;
+  position: absolute;
+  top: 0.5em;
+  width: min(20px, 8vw);
+  height: 3px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.darkMode {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  width: 50px;
+  height: 25px;
+  border-radius: 50px;
+  background-color: #05121b;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+.toggleThing {
+  position: absolute;
+  content: " ";
+  display: block;
+  width: 20px;
+  height: 20px;
+  top: 2px;
+  bottom: 2px;
+  left: 2px;
+  background-color: white;
+  border-radius: 100%;
+}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.darkMode.light {
+  background-color: #c45260;
+}
+
+@keyframes changeToggle {
+  0% {
+    width: 20px;
+    transform: translateX(0%);
+  }
+  50% {
+    width: 1.7em;
+    border-radius: 100%;
+    transform: translateX(0%);
+  }
+  100% {
+    width: 20px;
+    transform: translateX(calc(100% + 6px));
+  }
+}
+@keyframes changeToggleRight {
+  0% {
+    width: 20px;
+    transform: translateX(100%);
+  }
+  50% {
+    width: 25px;
+    transform: translateX(100%);
+  }
+  100% {
+    width: 20px;
+    transform: translateX(0%);
+  }
+}
+.animateToggleRight {
+  animation-name: changeToggleRight;
+  animation-duration: 0.3s;
+  animation-iteration-count: 1;
+  transform: translateX(-calc(100% + 6px));
+}
+.animateToggle {
+  animation-name: changeToggle;
+  animation-duration: 0.3s;
+  animation-iteration-count: 1;
+  transform: translateX(calc(100% + 6px));
+}
+.iconInToggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.mobileNav {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  position: fixed;
+  inset: 0;
+  padding-block: 8em;
+  gap: 2em;
+  background-color: rgb(12, 24, 33);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.navbarList {
+  padding: 0;
+  text-align: center;
+  display: block;
+  margin-inline: auto;
+  background-color: red;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.clicked {
+  color: #c45260 !important;
+}
+.lis {
+  font-size: 1em;
+  list-style: none;
+  text-decoration: none !important;
+  color: #ffffff;
+
+  font-weight: 700 bold;
+}
+.mobileNav > ul > img {
+  height: 9em;
+  width: 7em;
+  margin: 4em;
+  opacity: 0.5;
+}
+.exitIcon {
+  align-self: flex-end;
+  position: absolute;
+  align-self: flex-end;
+  margin-right: 3em;
+  top: 1.7em;
+  right: 1.7em;
+  width: 2em;
+  height: 2em;
+  cursor: pointer;
+}
+.navFooterImage {
+  display: block;
+  height: 9em;
+  margin: auto;
+  margin-top: 4em;
+  opacity: 0.5;
+}
+
+@media (min-width: 900px) {
+  .mobileNav {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .bars {
+    display: none;
   }
+
+  .lis {
+    display: flex;
+    color: black;
+    font-weight: 500;
+    justify-content: space-around;
+    margin-inline: 1em;
+    text-align: center;
+    break-inside: auto;
+  }
+  .logo {
+    width: min(70px, 4vw);
+  }
+  .links {
+    /*თუ მინდა ზუსტად გიოსას დავამსგავსო padding-left: 80px padding-block: 32px თუარადა ესე უფრო ლამაზია*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-block: auto;
+    padding-inline: 0.5em;
+    line-height: auto;
+  }
+  .innerNav {
+    justify-content: space-around;
+  }
+}
+@media (min-width: 500px) {
+  .bars {
+    display: none;
+  }
+}
+
+/*
+ ================================
+ ===========Home section=========
+ ================================
+ */
+.homeSection {
+  /* position: relative; */
+  overflow-x: hidden;
+  /* margin-top: 12em; */
+  margin-top: min(12em, 30vw);
+  font-family: nunito;
+}
+.homeHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 1em;
+}
+/* .darkHome {
+  background-color: red;
+} */
+.title {
+  margin: 0;
+  height: auto;
+  width: 42%;
+  font-size: 2.5em;
+  word-break: break-word;
+  font-weight: 900;
+}
+.title > span {
+  color: #c45260;
+}
+.firstSoldire {
+  position: absolute;
+  right: 1em;
+  /* top: 10em; */
+  top: 11em;
+  height: 30vh;
+}
+.homeParagraph {
+  width: 90%;
+  font-size: 1em;
+  font-weight: 400;
+}
+.secondHome {
+  margin-top: 10em;
+  position: relative;
+}
+.secondSolider {
+  position: absolute;
+  left: 1em;
+  top: -10vh;
+
+  height: 20vh;
+}
+.discoverButton {
+  display: flex;
+  justify-content: center;
+}
+.discoverButton > button {
+  border: 2px solid rgb(10, 30, 63);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding-inline: 2em;
+  height: 4.4em;
+  background-color: #ffffff;
+  color: rgb(10, 30, 63);
+  font-weight: 900;
+}
+.discoverButton > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(11, 31, 64);
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 3.5em;
+  padding: 0.3em;
+}
+.discoverButton > div > * {
+  width: 20px;
+  height: 20px;
+  color: white;
+}
+.downloadGrid {
+  margin-top: 1em;
+  display: grid;
+  width: min(100vw, 30em);
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  top: 25vw;
+
+  margin-inline: auto;
+}
+.appleStore {
+  justify-self: end;
+}
+
+.appleStore > * {
+  height: min(12vw, 4em);
+}
+.appStore {
+  justify-self: start;
+}
+.appStore > * {
+  height: min(12vw, 4em);
+}
+.homeTwoAbsolute {
+  position: absolute;
+}
+@media (max-width: 250px) {
+  .homeTwoAbsolute {
+    position: absolute;
+    top: -30vh;
+  }
+}
+@media (min-width: 480px) {
+  body {
+    position: relative;
+  }
+
+  .homeParagraph {
+    width: 60%;
+    line-height: 1.5em;
+    font-size: 1.25rem;
+    margin: 0;
+  }
+
+  .homeHeader > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+  }
+  .title {
+    line-height: 1.5em;
+    width: 60%;
+    font-size: 4em;
+  }
+  .homeHeader {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+  .secondHome {
+    position: static;
+    margin-top: 3em;
+  }
+  .discoverButton {
+    padding-top: 3em;
+  }
+  .firstSoldire {
+    height: 60vh;
+    margin-top: -2.3em;
+  }
+  .secondSolider {
+    position: absolute;
+    top: 7.3em;
+    right: 1em;
+    height: 60vh;
+  }
+  .downloadGrid {
+    margin-top: 5em;
+  }
+  .appleStore {
+    justify-self: center;
+  }
+
+  .appStore {
+    justify-self: center;
+  }
+}
+/*
+ ================================
+ ==========About section=========
+ ================================
+ */
+.AboutSection {
+  margin-top: 108px;
+}
+.aboutUsHeader {
+  display: flex;
+  margin: auto;
+  margin-bottom: 1em;
+}
+.aboutHeader {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-top: 0.7em;
+  margin-bottom: 1.5em;
+}
+@keyframes BounceImages {
+  0% {
+    transform: translateY(-1em);
+  }
+  50% {
+    transform: translateY(1em);
+  }
+  100% {
+    transform: translateY(-1em);
+  }
+}
+@keyframes BounceImageS {
+  0% {
+    transform: translateY(-0.8em);
+  }
+  30% {
+    transform: translateY(0.8em);
+  }
+  50% {
+    transform: translateY(0.5em);
+  }
+  100% {
+    transform: translateY(-0.8em);
+  }
+}
+.gridImage {
+  animation-name: BounceImages;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  width: 100%;
+  filter: drop-shadow(10px 10px 100px rgba(1, 108, 162, 0.5));
+}
+.image2 {
+  animation-name: BounceImageS;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  filter: drop-shadow(10px 10px 100px rgba(234, 217, 128, 0.2));
+}
+.gridContainer {
+  margin-inline: 1em;
+  text-align: center;
+  font-weight: 300;
+  /* background-color: red; */
+}
+@media (min-width: 500px) {
+  .gridContainer {
+    text-align: left;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    /* max-width: 90%; */
+    width: min(80em, 90%);
+    /* background-color: rebeccapurple; */
+    margin: auto;
+  }
+  .image2 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .aboutParagraph2 {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .gridparagraphs {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 85%;
+  }
+  .aboutHeader {
+    margin: auto;
+    width: 100%;
+  }
+  .aboutParagraph {
+    width: min(28em, 100%);
+    font-weight: 600;
+    justify-self: center;
+  }
+}
+
+.borderDiv {
+  /* rgb(196, 82, 96) */
+  /* background-image: linear-gradient(to right, rgb(196, 82, 96), white); */
+  background-image: linear-gradient(to right bottom, rgb(196, 82, 96), white);
+  background-color: #c45260;
+  width: 90%;
+  padding: 0.05em;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 13em;
+}
+.innedBorderDiv {
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr); */
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 100%;
+  border-radius: 10px;
+
+  background-color: white;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  width: 80%;
+  margin: auto;
+}
+.flex > div > img {
+  width: 7vw;
+  padding: 1em;
+}
+.flex > p {
+  padding-left: 0.5em;
+  font-weight: 600;
+}
+.AMTHeader {
+  background-color: white;
+  width: fit-content;
+  font-size: 1.5em;
+  padding-inline: 0.5em;
+  margin-top: -0.7em;
+  margin-left: 1em;
 }
