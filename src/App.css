@@ -587,6 +587,7 @@ body,
     padding: 1em;
   }
   .innedBorderDiv > :nth-child(1) {
+    margin: auto;
     margin-block: 1.5em;
   }
   .AMTHeader {
