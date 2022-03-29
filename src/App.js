@@ -1,8 +1,9 @@
 import React from "react";
 import "./App.css";
-import Navbar from "./Navbar";
-import Home from "./Home";
-import AboutUs from "./aboutUs";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import AboutUs from "./components/aboutUs";
+import DesignConcept from "./components/DesignConcept";
 function App() {
   const [darkMode, setDarkMode] = React.useState(false);
   return (
@@ -10,6 +11,7 @@ function App() {
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
       <Home darkMode={darkMode} />
       <AboutUs />
+      <DesignConcept />
     </div>
   );
 }
