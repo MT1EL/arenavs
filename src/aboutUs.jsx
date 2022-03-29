@@ -68,48 +68,81 @@ function AboutUs() {
       </div>
       <div className="AMTTokens">
         <div className="borderDiv">
+          <p className="AMTHeader">AMT token Utility</p>
+
           <div className="innedBorderDiv">
-            <p className="AMTHeader">AMT token Utility</p>
+            <div className="items">
+              <div className="flex">
+                <div>
+                  <img src="https://arenavs.com/token/1.svg" alt="firstToken" />
+                </div>
+                <p>Competing in PVE battles to win leaderboard prizes</p>
+              </div>
+              <div className="flex">
+                <div>
+                  <img
+                    src="https://arenavs.com/token/2.svg"
+                    alt="secondToken"
+                  />
+                </div>
+                <p>Competing in PVP battles against players</p>
+              </div>
 
-            <div className="flex">
-              <div>
-                <img src="https://arenavs.com/token/1.svg" alt="firstToken" />
+              <div className="flex">
+                <div>
+                  <img src="https://arenavs.com/token/3.svg" alt="thirdToken" />
+                </div>
+                <p>NFT Rewards</p>
               </div>
-              <p>Competing in PVE battles to win leaderboard prizes</p>
-            </div>
-            <div className="flex">
-              <div>
-                <img src="https://arenavs.com/token/2.svg" alt="secondToken" />
+              <div className="flex">
+                <div>
+                  <img src="https://arenavs.com/token/4.svg" alt="fifthToken" />
+                </div>
+                <p>Single Asset staking</p>
               </div>
-              <p>Competing in PVP battles against players</p>
-            </div>
+              <div className="flex">
+                <div>
+                  <img src="https://arenavs.com/token/5.svg" alt="sixthToken" />
+                </div>
+                <p>In-game rewards</p>
+              </div>
 
-            <div className="flex">
-              <div>
-                <img src="https://arenavs.com/token/3.svg" alt="thirdToken" />
+              <div className="flex">
+                <div>
+                  <img
+                    src="https://arenavs.com/token/6.svg"
+                    alt="seventhToken"
+                  />
+                </div>
+                <p>In-game bonuses</p>
               </div>
-              <p>NFT Rewards</p>
-            </div>
-            <div className="flex">
-              <div>
-                <img src="https://arenavs.com/token/4.svg" alt="fifthToken" />
-              </div>
-              <p>Single Asset staking</p>
-            </div>
-            <div className="flex">
-              <div>
-                <img src="https://arenavs.com/token/5.svg" alt="sixthToken" />
-              </div>
-              <p>In-game rewards</p>
-            </div>
-
-            <div className="flex">
-              <div>
-                <img src="https://arenavs.com/token/6.svg" alt="seventhToken" />
-              </div>
-              <p>In-game bonuses</p>
             </div>
           </div>
+        </div>
+        <div className="paperArenaCards">
+          <img
+            src="https://arenavs.com/whitepaper.svg"
+            alt="whitePaper"
+            href="https://drive.google.com/file/d/15y0zXMYYsKLTVZeGApapIDKnw4J4X_hV/view"
+          />
+          <img
+            src="https://arenavs.com/deck.svg"
+            alt="arena master dec"
+            href="https://drive.google.com/file/d/1XVRxQTqd9h2_kf2dDj7KYOKoEx3CRpVe/view"
+          />
+        </div>
+      </div>
+      <div className="video">
+        <div className="videoBorder">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/HDZNiz30cCM"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </div>
       </div>
     </section>

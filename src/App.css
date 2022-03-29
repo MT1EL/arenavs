@@ -248,9 +248,6 @@ body,
  ================================
  */
 .homeSection {
-  /* position: relative; */
-  overflow-x: hidden;
-  /* margin-top: 12em; */
   margin-top: min(12em, 30vw);
   font-family: nunito;
 }
@@ -259,9 +256,6 @@ body,
   justify-content: space-between;
   margin-left: 1em;
 }
-/* .darkHome {
-  background-color: red;
-} */
 .title {
   margin: 0;
   height: auto;
@@ -276,7 +270,6 @@ body,
 .firstSoldire {
   position: absolute;
   right: 1em;
-  /* top: 10em; */
   top: 11em;
   height: 30vh;
 }
@@ -476,7 +469,6 @@ body,
   margin-inline: 1em;
   text-align: center;
   font-weight: 300;
-  /* background-color: red; */
 }
 @media (min-width: 500px) {
   .gridContainer {
@@ -486,10 +478,7 @@ body,
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-
-    /* max-width: 90%; */
     width: min(80em, 90%);
-    /* background-color: rebeccapurple; */
     margin: auto;
   }
   .image2 {
@@ -517,12 +506,11 @@ body,
     justify-self: center;
   }
 }
-
+.AMTTokens {
+  margin-bottom: 10em;
+}
 .borderDiv {
-  /* rgb(196, 82, 96) */
-  /* background-image: linear-gradient(to right, rgb(196, 82, 96), white); */
-  background-image: linear-gradient(to right bottom, rgb(196, 82, 96), white);
-  background-color: #c45260;
+  background-image: linear-gradient(to bottom right, rgb(196, 82, 96), white);
   width: 90%;
   padding: 0.05em;
   border-radius: 10px;
@@ -530,25 +518,29 @@ body,
   margin-top: 13em;
 }
 .innedBorderDiv {
-  /* display: grid;
-  grid-template-columns: repeat(3, 1fr); */
+  position: relative;
+  background-color: white;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
   margin: auto;
-  width: 100%;
-  border-radius: 10px;
-
-  background-color: white;
+  width: 99.9%;
+  margin-top: 0.05em;
+  border-radius: 0.5em;
+}
+.innedBorderDiv > :nth-child(1) {
+  margin-top: 4em;
 }
 .flex {
   display: flex;
   align-items: center;
-  padding: 1em;
-  width: 80%;
+  width: 83%;
   margin: auto;
+  margin: 1em;
 }
 .flex > div > img {
-  width: 7vw;
+  width: 8vw;
   padding: 1em;
 }
 .flex > p {
@@ -556,10 +548,123 @@ body,
   font-weight: 600;
 }
 .AMTHeader {
+  position: absolute;
   background-color: white;
+  z-index: 100;
   width: fit-content;
   font-size: 1.5em;
-  padding-inline: 0.5em;
+  padding-inline: 1em;
   margin-top: -0.7em;
-  margin-left: 1em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  margin-bottom: 0em;
+}
+@media (min-width: 500px) {
+  .borderDiv {
+    background-image: linear-gradient(to right, rgb(196, 82, 96), white);
+    /* width: 80%; */
+    width: min(80em, 100%);
+  }
+  .innedBorderDiv {
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 0.002em;
+    margin-top: 0.02em;
+  }
+  .flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 1em;
+  }
+  .flex > div > img {
+    height: 2.5vw;
+    width: fit-content;
+    padding: 1em;
+  }
+  .innedBorderDiv > :nth-child(1) {
+    margin-block: 1.5em;
+  }
+  .AMTHeader {
+    margin-left: 2em;
+  }
+}
+.paperArenaCards {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 70%;
+  margin-block: 2em;
+}
+.paperArenaCards > * {
+  filter: drop-shadow(0px 0px 200px rgba(1, 107, 160, 0.5));
+  margin-block: 2em;
+}
+@keyframes hover {
+  0% {
+    filter: drop-shadow(0px 0px 0px #c45260);
+  }
+  50% {
+    filter: drop-shadow(0px 0px 10px #c45260);
+  }
+  100% {
+    filter: drop-shadow(0px 0px 20px #c45260);
+  }
+}
+@media (min-width: 500px) {
+  .paperArenaCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 80em;
+    margin: auto;
+    justify-items: center;
+    gap: 2.5em;
+    margin-top: 5em;
+    /* //rgba(1, 107, 160, 0.5) */
+  }
+  .paperArenaCards > * {
+    max-width: 100%;
+  }
+  .paperArenaCards > *:hover {
+    animation-name: hover;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    filter: drop-shadow(0px 0px 20px #c45260);
+    cursor: pointer;
+  }
+}
+.video {
+  display: block;
+  width: min(80em, 90%);
+  height: 400px;
+  margin: auto;
+}
+.videoBorder {
+  background: linear-gradient(to right bottom, #c45260, white);
+  /* padding: 0.5em; */
+  padding: 0.5%;
+  border-radius: 10px;
+  margin: auto;
+}
+.videoBorder > * {
+  width: 100%;
+  height: 244px;
+}
+@media (min-width: 500px) {
+  .videoBorder {
+    background: linear-gradient(to right bottom, #c45260, white);
+    /* padding: 0.5em; */
+    padding: 0.5%;
+    border-radius: 10px;
+    max-width: 65%;
+    margin: auto;
+  }
+  .videoBorder > * {
+    width: 100%;
+    height: 25em;
+  }
 }
