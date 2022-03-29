@@ -127,7 +127,7 @@ function AboutUs() {
           />
           <img
             src="https://arenavs.com/deck.svg"
-            alt="arena master dec"
+            alt="arena master dec dsadas"
             href="https://drive.google.com/file/d/1XVRxQTqd9h2_kf2dDj7KYOKoEx3CRpVe/view"
           />
         </div>
