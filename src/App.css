@@ -667,3 +667,129 @@ body,
     height: 25em;
   }
 }
+/*
+ ================================
+ =====designConcept section======
+ ================================
+ */
+.designConcept {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  /* margin-top: -3em; */
+}
+.slider {
+  position: relative;
+  width: 100%;
+
+  margin: auto;
+  margin-block: 2em;
+}
+
+.slideImage {
+  position: relative;
+
+  width: 90%;
+  margin: auto;
+  background-color: white;
+}
+.carouselImages {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.slick-arrow.slick-prev,
+.slick-arrow.slick-next {
+  width: 50px;
+  height: 50px;
+  z-index: 50;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+}
+.slick-arrow.slick-prev {
+  left: 0.5em;
+  background-image: url("https://arenavs.com/prev.svg");
+}
+.slick-arrow.slick-next {
+  right: 0.5em;
+  background-image: url("https://arenavs.com/next.svg");
+}
+
+.slick-prev::before,
+.slick-next::before {
+  display: none;
+}
+.slick-arrow.slick-prev:hover {
+  background-image: url("https://arenavs.com/prev.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.slick-arrow.slick-next:hover {
+  background-image: url("https://arenavs.com/next.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.textAndDownlaod {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  color: white;
+  font-weight: 800;
+  bottom: 1em;
+  width: 90vw;
+}
+.textAndDownlaod > p {
+  margin: 0.2em;
+}
+.downloadAPP {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 1em;
+}
+.downloadAPP > * {
+  height: 2em;
+}
+@media (min-width: 500px) {
+  .designConcept {
+    margin-top: 10em;
+  }
+  .slider {
+    position: relative;
+    width: min(80em, 100%);
+  }
+  .slideImage {
+    width: 100%;
+  }
+  .textAndDownlaod {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    bottom: 50%;
+    transform: translateY(40%);
+    width: 80vw;
+    padding-inline-start: 2em;
+    font-weight: 700;
+    /* background-color: red; */
+  }
+  .textAndDownlaod > p {
+    font-size: 2.5em;
+    padding-bottom: 0.5em;
+    margin-block: 1em;
+  }
+  .downloadAPP {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 1em;
+    max-width: 100%;
+  }
+  .downloadAPP > * {
+    height: min(5em, 10vw);
+    /* padding-block: 3em; */
+  }
+}
