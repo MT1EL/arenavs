@@ -658,6 +658,7 @@ body,
   .videoBorder {
     background: linear-gradient(to right bottom, #c45260, white);
     padding: 0.5%;
+    padding-bottom: 0%;
     border-radius: 10px;
     max-width: 65%;
     margin: auto;
@@ -698,6 +699,7 @@ body,
   width: 100%;
   height: auto;
 }
+/* 
 .slick-arrow.slick-prev,
 .slick-arrow.slick-next {
   width: 50px;
@@ -705,17 +707,17 @@ body,
   z-index: 50;
   background-position: center;
   background-repeat: no-repeat;
-  background-repeat: no-repeat;
 }
 .slick-arrow.slick-prev {
+  display: block;
   left: 0.5em;
   background-image: url("https://arenavs.com/prev.svg");
 }
 .slick-arrow.slick-next {
+  display: block;
   right: 0.5em;
   background-image: url("https://arenavs.com/next.svg");
 }
-
 .slick-prev::before,
 .slick-next::before {
   display: none;
@@ -729,6 +731,24 @@ body,
   background-image: url("https://arenavs.com/next.svg");
   background-repeat: no-repeat;
   background-position: center;
+} */
+.arrow {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  z-index: 50;
+  top: 50%;
+  transform: translateY(-50%);
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.prevArrow {
+  background-image: url("https://arenavs.com/prev.svg");
+}
+.nextArrow {
+  right: 0;
+  background-image: url("https://arenavs.com/next.svg");
 }
 .textAndDownlaod {
   display: flex;
@@ -763,6 +783,10 @@ body,
   .slideImage {
     width: 100%;
   }
+  .carouselImages {
+    margin: auto;
+    padding: "10px";
+  }
   .textAndDownlaod {
     position: absolute;
     display: flex;
@@ -793,3 +817,138 @@ body,
     /* padding-block: 3em; */
   }
 }
+
+/*
+====================
+==roadMapSection====
+====================
+*/
+
+.roadMapHeader {
+  display: block;
+  max-width: fit-content;
+  margin: auto;
+  margin-block: 2em;
+}
+
+.components {
+  background: linear-gradient(45deg, rgb(5, 18, 27) 0%, rgb(5, 19, 28) 100%);
+  border-radius: 10px;
+  margin-right: 1em;
+}
+.vertical-timeline-element-content {
+  box-shadow: none !important;
+  padding: 0em !important;
+  padding-bottom: 0em !important;
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  font-weight: 700;
+  color: white;
+  box-shadow: none !important;
+  border: none;
+}
+.seconHalfIcon {
+  border: 5px solid black !important;
+}
+.checkLis {
+  display: flex;
+  align-items: center;
+  color: white;
+  /* margin: 0em 0em 0em 1em; */
+}
+.wholeLis {
+  padding-top: 2em;
+  padding-left: 1em;
+}
+h3 {
+  margin: 0.8em;
+}
+.checkLis > img {
+  width: 2.5em;
+  height: 2.5em;
+  margin-right: 1em;
+}
+.animalImages {
+  max-width: 100%;
+}
+
+.elem {
+  position: relative;
+}
+@media (min-width: 1170px) {
+  .icon {
+    font-size: 2em;
+  }
+  .animalImages {
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+  }
+  .left {
+    left: 125%;
+  }
+  .right {
+    opacity: 0.6;
+    right: 130%;
+  }
+  .wholeLis {
+    padding-bottom: 1em;
+  }
+}
+.vertical-timeline-elemnt::after {
+  content: "";
+  width: 100px;
+  height: 100px;
+  background-color: #05121b;
+}
+/* .roadMapSection {
+  margin-top: 10em;
+}
+.roadMapSection > * {
+  max-width: 100%;
+}
+.bearImg {
+  margin: auto;
+  max-width: 100%;
+}
+.checkFlex {
+  display: flex;
+  align-items: center;
+  padding: 1em;
+}
+.checkFlex > * {
+  margin-right: 1em;
+}
+.red {
+  background-color: red;
+}
+
+.vertical-timeline.vertical-timeline-custom-line::before {
+  background: #c45260;
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #c45260;
+  border: transparent;
+  width: 100px;
+  font-size: 2em;
+  margin-top: 1.5em;
+}
+.secondIcons {
+  display: flex;
+  margin-top: 1.5em;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  width: 100px;
+  font-size: 2em;
+} */ ;

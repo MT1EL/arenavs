@@ -13,6 +13,10 @@ function DesignConcept() {
     },
     { url: "https://arenavs.com/slides/4.jpg", text: "COLLECT NFT CHARACTERS" },
   ]);
+  const settings = {
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+  };
   return (
     <section>
       <div className="designConcept">
@@ -48,7 +52,7 @@ function DesignConcept() {
       </div>
       <div className="slider">
         <div className="slideImage">
-          <Slider>
+          <Slider {...settings}>
             {images.map((item) => {
               return (
                 <div cassName="imageContainer">
@@ -65,11 +69,13 @@ function DesignConcept() {
                       />
                     </div>
                   </div>
-                  <img
-                    className="carouselImages"
-                    src={item.url}
-                    alt="soliders Image for carousel "
-                  />
+                  <div style={{ width: "100%", margin: "auto" }}>
+                    <img
+                      className="carouselImages"
+                      src={item.url}
+                      alt="soliders Image for carousel "
+                    />
+                  </div>
                 </div>
               );
             })}
@@ -78,6 +84,16 @@ function DesignConcept() {
       </div>
     </section>
   );
+}
+
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return <div className="arrow prevArrow" onClick={onClick} />;
+}
+
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return <div className="arrow nextArrow" onClick={onClick} />;
 }
 
 export default DesignConcept;
