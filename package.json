@@ -21,6 +21,7 @@
     "react-tooltip": "^4.2.21",
     "react-vertical-timeline-component": "^3.5.2",
     "slick-carousel": "^1.8.1",
+    "swiper": "^8.0.7",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

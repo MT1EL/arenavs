@@ -1,0 +1,173 @@
+.smallCardContainer {
+  display: none;
+}
+.swiperDiv {
+  background: #fff;
+  margin-bottom: 10em;
+}
+
+.TeamHeader {
+  display: flex;
+  margin: auto;
+  margin-block: 10em;
+  margin-bottom: 7em;
+}
+.swiper {
+  /* width: 240px; */
+  /* height: 320px; */
+  width: 90%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  /* height: 30em; */
+  height: 23em;
+}
+.wrapper {
+  width: 100%;
+  height: 90%;
+  margin-top: 70%;
+  margin-top: 11.5em;
+  padding: 0.05em;
+  border-radius: 10px;
+  background: linear-gradient(
+    rgb(196, 82, 96),
+    rgba(196, 82, 96, 0),
+    rgba(196, 82, 96, 0)
+  );
+}
+.content {
+  position: absolute;
+  top: -130px;
+}
+.teamImages {
+  /* max-height: 250px; */
+  height: 240px;
+  border-radius: 5px;
+}
+.wrapperBorder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 1em;
+}
+.memberName {
+  font-size: 1rem;
+
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  font-weight: 700;
+}
+.memberPosition {
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 1em;
+}
+@media (min-width: 500px) {
+  .mySwiper {
+    width: 100%;
+  }
+  .swiper-slide {
+    height: 20em;
+  }
+}
+@media (min-width: 770px) {
+  .swiper {
+    display: none;
+  }
+  .smallCardContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-gap: 1em; */
+    /* gap: 1em; */
+    gap: 1em;
+    gap: 1vw;
+    /* row-gap: 2em; */
+    max-width: 85%;
+    margin: auto;
+  }
+  .smallCard {
+    position: relative;
+    /* background-color: aqua; */
+  }
+  .cardBorder {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 90%;
+    width: 90%;
+    min-width: 14em;
+    margin: auto;
+    background: linear-gradient(
+      rgb(196, 82, 96),
+      rgba(196, 82, 96, 0),
+      rgba(196, 82, 96, 0)
+    );
+    padding-inline: 0.1em;
+    padding-block: 0.1em;
+    border-radius: 10px;
+    height: 15em;
+
+    margin-block: 1.5em;
+  }
+  @keyframes cardAnim {
+    0% {
+      height: 90%;
+      width: 90%;
+    }
+
+    100% {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .cardBorder:hover {
+    animation-name: cardAnim;
+    animation-duration: 0.5s;
+
+    margin-block: 0em;
+    width: 100%;
+    height: 100%;
+  }
+  .cardContent {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  .cardContent > div > * {
+    margin-block: 0.5em;
+  }
+  .smallImage {
+    height: 6em;
+    height: min(10em, 10vw);
+    max-height: 350px;
+  }
+  .smallName {
+    font-weight: 700;
+    /* padding-block: 0.5em; */
+  }
+  .smallPosition {
+    font-weight: 600;
+    padding-bottom: 0.5em;
+  }
+  .absolute {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -30%;
+  }
+}

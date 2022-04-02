@@ -9,6 +9,7 @@ import RoadMap from "./components/roadMap/RoadMap";
 // import Table from "./components/tokenomics/table";
 import Tokenomics from "./components/tokenomicsFolder/PieAndTable";
 import Team from "./components/Team/team";
+import Sponsors from "./components/Sponsors";
 const header = ["pool", "amt Price", "raised", "procent", "tokens"];
 const footer = ["TOTAL", "", "$1.032,480", "100,00%", "100 000 000"];
 function App() {
@@ -22,6 +23,7 @@ function App() {
       <RoadMap />
       <Tokenomics />
       <Team />
+      <Sponsors />
     </div>
   );
 }

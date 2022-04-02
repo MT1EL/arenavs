@@ -7,6 +7,9 @@ body,
   padding: 0;
   font-family: Nunito;
 }
+section {
+  overflow: hidden;
+}
 
 .navbar {
   position: fixed;
@@ -542,8 +545,9 @@ body,
   margin: 1em;
 }
 .flex > div > img {
-  width: 8vw;
+  width: 15vw;
   padding: 1em;
+  /* background-color: rebeccapurple; */
 }
 .flex > p {
   padding-left: 0.5em;
@@ -584,7 +588,8 @@ body,
     margin: 1em;
   }
   .flex > div > img {
-    height: 2.5vw;
+    /* height: 2.5vw; */
+    height: 5vw;
     width: fit-content;
     padding: 1em;
   }
@@ -908,4 +913,91 @@ h3 {
   width: 100px;
   height: 100px;
   background-color: #05121b;
+}
+
+.sponsorsGrid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  max-width: 75em;
+  margin: auto;
+  justify-items: center;
+  align-items: center;
+  row-gap: 1.5em;
+  margin-block: 5em;
+}
+@keyframes sponsorsAnim {
+  0% {
+    transform: translateY(0em);
+  }
+  50% {
+    transform: translateY(1em);
+  }
+  100% {
+    transform: translateY(0em);
+  }
+}
+.sponsorsGrid > :nth-child(2),
+.sponsorsGrid > :nth-child(4) {
+  animation-name: sponsorsAnim;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes sponsorsAnim2 {
+  0%,
+  100% {
+    transform: translateY(-0.2em);
+  }
+  30% {
+    transform: translateY(0.5em);
+  }
+  50% {
+    transform: translateY(0.4em);
+  }
+}
+.sponsorsGrid > :nth-child(1),
+.sponsorsGrid > :nth-child(3),
+.sponsorsGrid > :nth-child(5),
+.sponsorsGrid > :nth-child(6),
+.sponsorsGrid > :nth-child(7),
+.sponsorsGrid > :nth-child(8),
+.sponsorsGrid > :nth-child(9) {
+  animation-name: sponsorsAnim2;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.sponsorsImage {
+  max-height: 4em;
+  /* width: 80%; */
+}
+@media (max-width: 900px) {
+  .sponsorsImage {
+    max-height: 4em;
+    max-width: 4em;
+    /* width: 80%; */
+  }
+}
+@media (max-width: 500px) {
+  .sponsorsGrid {
+    display: flex;
+    flex-direction: column;
+  }
+  .sponsorsImage {
+    max-height: 4em;
+    width: min(100%, 80vw);
+    /* width: 80%; */
+  }
+
+  .sponsorsGrid > :nth-child(1),
+  .sponsorsGrid > :nth-child(3),
+  .sponsorsGrid > :nth-child(5),
+  .sponsorsGrid > :nth-child(7) {
+    margin-right: 50%;
+  }
+  .sponsorsGrid > :nth-child(2),
+  .sponsorsGrid > :nth-child(4),
+  .sponsorsGrid > :nth-child(6),
+  .sponsorsGrid > :nth-child(8) {
+    margin-left: 50%;
+  }
 }
