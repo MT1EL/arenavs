@@ -14,7 +14,8 @@ body,
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  overflow-x: hidden;
+  width: 100vw;
   background-color: white;
   box-shadow: 0px 0px 5px 0px #e2e8f0;
   z-index: 9999;
@@ -415,6 +416,7 @@ body,
  */
 .AboutSection {
   margin-top: 108px;
+  overflow-x: hidden;
 }
 .aboutUsHeader {
   display: flex;
@@ -823,7 +825,9 @@ body,
 ==roadMapSection====
 ====================
 */
-
+.Roadmap {
+  overflow-x: hidden;
+}
 .roadMapHeader {
   display: block;
   max-width: fit-content;
@@ -904,100 +908,4 @@ h3 {
   width: 100px;
   height: 100px;
   background-color: #05121b;
-}
-/*
-====================
-===Tokenomics=======
-====================
-*/
-.tokenomics {
-  display: flex;
-  margin: auto;
-  margin-top: 10em;
-}
-.tokenomicGrid {
-  display: grid;
-  grid-template-columns: 1fr 0.5fr;
-  margin: auto;
-  max-width: fit-content;
-  align-items: center;
-  width: fit-content;
-}
-.tableContainer {
-  background-color: #05121b;
-  color: white;
-  width: fit-content;
-  margin: auto;
-  border-radius: 10px;
-}
-
-table {
-  background-color: #05121b;
-  padding: 1.2em 1.2em 2.5em 1.2em;
-  /* margin: 1em 1em; */
-  border-radius: 10px;
-  /* margin-bottom: 10em; */
-}
-
-.tableFooter {
-  border: none;
-  /* background-color: #014870; */
-}
-tfoot {
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  background-color: #014870;
-  border-radius: 10px;
-}
-.d {
-  background-color: #05121b;
-  border-radius: 10px;
-}
-th {
-  font-size: 1em;
-  text-align: start;
-  border-bottom: 1px solid #edf2f7;
-}
-td {
-  border-bottom: 1px solid #edf2f7;
-  padding: 0.3em;
-}
-td {
-  padding-inline-start: 0.5em;
-  padding-inline-end: 1em;
-}
-th {
-  padding-inline-start: 0.5em;
-  padding-inline-end: 2em;
-  font-weight: 900;
-}
-.tableFooter {
-  font-weight: 700;
-  letter-spacing: 0.05em;
-}
-.contentTr:hover {
-  background-color: #014870;
-  cursor: pointer;
-}
-.active {
-  background-color: #014870;
-}
-.rela {
-  position: relative;
-}
-.pie {
-  position: relative;
-  color: #014870;
-}
-.pieCircle {
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  border-radius: 100%;
-  left: calc(50% - 150px);
-  top: -50px;
-
-  transform: translateY(50%);
-  z-index: 222;
-  background-color: red;
 }
