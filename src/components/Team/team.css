@@ -97,10 +97,7 @@
     max-width: 85%;
     margin: auto;
   }
-  .smallCard {
-    position: relative;
-    /* background-color: aqua; */
-  }
+
   .cardBorder {
     position: relative;
     display: flex;
