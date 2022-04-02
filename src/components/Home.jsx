@@ -1,5 +1,5 @@
 import React from "react";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 function Home(props) {
   return (
@@ -24,7 +24,9 @@ function Home(props) {
       <div className="secondHome">
         <div className="discoverButton">
           <button href="#home">Discover more </button>
-          <div>{/* <FontAwesomeIcon icon={faAngleRight} /> */}</div>
+          <div>
+            <FontAwesomeIcon icon={faAngleRight} />
+          </div>
         </div>
         {/* <div className="homeTwoAbsolute"> */}
         <img
