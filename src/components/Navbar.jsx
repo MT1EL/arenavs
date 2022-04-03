@@ -172,8 +172,8 @@ function Navbar({ darkMode, setDarkMode }) {
             return (
               <a
                 href={item.id}
-                target="_blank"
-                rel="noreferrer"
+                // target="_blank"
+                // rel="noreferrer"
                 className={item.name === targeted ? "lis clicked" : "lis"}
                 onClick={() => handleClick(item.name)}
               >
