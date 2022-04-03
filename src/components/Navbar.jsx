@@ -25,7 +25,7 @@ function Navbar({ darkMode, setDarkMode }) {
 
   function handleClick(props) {
     setTargeted(props);
-    console.log(props);
+    setMobileNav(!mobileNav);
   }
   console.log(mobileNav);
   return (
