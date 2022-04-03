@@ -12,7 +12,7 @@ function Tokenomics() {
   const [active, setActive] = React.useState(tabledata[0]);
   const [backgroundColor, setBackgroundColor] = React.useState("#A84366");
   return (
-    <div className="tokenomic">
+    <div className="tokenomic" id="Tokenomics">
       <svg
         width="256"
         height="80"

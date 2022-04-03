@@ -2,7 +2,7 @@ import React from "react";
 
 function AboutUs() {
   return (
-    <section className="AboutSection">
+    <section className="AboutSection" id="AboutUs">
       <svg
         className="aboutUsHeader"
         width="220"

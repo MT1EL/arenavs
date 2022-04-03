@@ -18,7 +18,7 @@ function DesignConcept() {
     prevArrow: <SamplePrevArrow />,
   };
   return (
-    <section>
+    <section id="DesignConcept">
       <div className="designConcept">
         <svg
           width="325"
@@ -69,7 +69,13 @@ function DesignConcept() {
                       />
                     </div>
                   </div>
-                  <div style={{ width: "100%", margin: "auto" }}>
+                  <div
+                    style={{
+                      width: "100%",
+                      margin: "auto",
+                      overflow: "hidden",
+                    }}
+                  >
                     <img
                       className="carouselImages"
                       src={item.url}
@@ -97,38 +103,3 @@ function SampleNextArrow(props) {
 }
 
 export default DesignConcept;
-
-{
-  /* <div cassName="imageContainer">
-<img
-  className="carouselImages"
-  src="https://arenavs.com/slides/1.jpg"
-  alt="soliders Image for carousel "
-/>
-<p>DEFEND YOUR CASTLE</p>
-</div>
-<div className="imageContainer">
-<img
-  className="carouselImages"
-  src="https://arenavs.com/slides/2.jpg"
-  alt="soliders Image for carousel "
-/>
-<p>EXPLORE NEW LANDS</p>
-</div>
-<div className="imageContainer">
-<img
-  className="carouselImages"
-  src="https://arenavs.com/slides/3.jpg"
-  alt="soliders Image for carousel "
-/>
-<p>BATTLE ON DIVERSE ARENAS</p>
-</div>
-<div className="imageContainer">
-<img
-  className="carouselImages"
-  src="https://arenavs.com/slides/4.jpg"
-  alt="soliders Image for carousel "
-/>
-<p>COLLECT NFT CHARACTERS</p>
-</div> */
-}

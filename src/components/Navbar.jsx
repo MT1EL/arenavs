@@ -2,14 +2,14 @@ import React from "react";
 
 function Navbar({ darkMode, setDarkMode }) {
   let navbarLinks = [
-    { name: "Home", id: "Home" },
-    { name: "About Us", id: "About Us" },
-    { name: "Design concept", id: "Design concept" },
-    { name: "Roadmap", id: "Roadmap" },
-    { name: "Tokenomics", id: "Tokenomics" },
-    { name: "Our team", id: "Our team" },
+    { name: "Home", id: "#home" },
+    { name: "About Us", id: "#AboutUs" },
+    { name: "Design concept", id: "#DesignConcept" },
+    { name: "Roadmap", id: "#Roadmap" },
+    { name: "Tokenomics", id: "#Tokenomics" },
+    { name: "Our team", id: "#Ourteam" },
 
-    { name: "Partners", id: "Partners" },
+    { name: "Partners", id: "#Partners" },
     {
       name: "Whitepaper",
       id: "https://drive.google.com/file/d/15y0zXMYYsKLTVZeGApapIDKnw4J4X_hV/view",
@@ -22,10 +22,10 @@ function Navbar({ darkMode, setDarkMode }) {
   // const [darkMode, setDarkMode] = React.useState(false);
   const [mobileNav, setMobileNav] = React.useState(false);
   const [targeted, setTargeted] = React.useState("");
-  console.log(darkMode);
 
   function handleClick(props) {
     setTargeted(props);
+    console.log(props);
   }
   console.log(mobileNav);
   return (
@@ -46,7 +46,8 @@ function Navbar({ darkMode, setDarkMode }) {
               return (
                 <a
                   href={item.id}
-                  target="_blank"
+                  // target="_blank"
+                  target="_self"
                   className={item.name === targeted ? "lis clicked" : "lis"}
                   onClick={() => handleClick(item.name)}
                 >

@@ -4,7 +4,7 @@ import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 function Home(props) {
   return (
     <section className="homeSection">
-      <div className="homeHeader">
+      <div className="homeHeader" id="home">
         <div>
           <p className="title">
             ARENA AWAITS YOU,<span> MY LORD</span>

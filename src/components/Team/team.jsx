@@ -11,7 +11,7 @@ import "./team.css";
 import { EffectCards } from "swiper";
 function Team() {
   return (
-    <section className="swiperDiv">
+    <section className="swiperDiv" id="Ourteam">
       <svg
         width="224"
         height="80"

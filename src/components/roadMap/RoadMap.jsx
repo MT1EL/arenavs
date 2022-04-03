@@ -17,7 +17,7 @@ function RoadMap() {
   };
 
   return (
-    <section className="Roadmap">
+    <section className="Roadmap" id="Roadmap">
       <svg
         className="roadMapHeader"
         width="220"

@@ -14,7 +14,7 @@ function Sponsors() {
   ];
 
   return (
-    <section className="sponsors">
+    <section className="sponsors" id="Partners">
       <svg
         width="277"
         height="80"

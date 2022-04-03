@@ -420,6 +420,7 @@ section {
 .AboutSection {
   margin-top: 108px;
   overflow-x: hidden;
+  padding: 1em;
 }
 .aboutUsHeader {
   display: flex;
@@ -574,7 +575,7 @@ section {
   .innedBorderDiv {
     align-items: flex-start;
     justify-content: flex-start;
-    margin: 0.002em;
+    margin: 0.02em;
     margin-top: 0.02em;
   }
   .flex {
@@ -589,7 +590,7 @@ section {
   }
   .flex > div > img {
     /* height: 2.5vw; */
-    height: 5vw;
+    height: 4vw;
     width: fit-content;
     padding: 1em;
   }
@@ -664,15 +665,16 @@ section {
 @media (min-width: 500px) {
   .videoBorder {
     background: linear-gradient(to right bottom, #c45260, white);
-    padding: 0.5%;
-    padding-bottom: 0%;
+    padding-inline: 0.5%;
+    padding-bottom: -5em;
     border-radius: 10px;
     max-width: 65%;
     margin: auto;
   }
   .videoBorder > * {
     width: 100%;
-    height: 25em;
+    height: 25.5em;
+    /* border-radius: 5px; */
   }
 }
 /*
@@ -1170,6 +1172,8 @@ h3 {
   padding: 1.5em;
   border: 1px solid white;
   border-radius: 5px;
+  color: white;
+  font-weight: 700;
 }
 .footerInputs > :nth-child(3) {
   padding-block: 2.5em;
@@ -1190,6 +1194,12 @@ h3 {
   color: black;
   font-weight: 700;
   font-size: 1em;
+}
+.container > button:hover {
+  background-color: #fefefe;
+  transition: all 0.5s ease-in-out;
+
+  cursor: pointer;
 }
 .footerIcons {
   width: min(100%, 30em);
@@ -1239,10 +1249,7 @@ h3 {
   margin-top: 2em;
 }
 input:focus {
-  /* outline-color: #4b9bf0; */
-  /* outline: 2px solid transparent; */
   outline: 1px solid #4b9bf0;
-  /* border: 1px solid #4b9bf0; */
 }
 .inputAbutton > input {
   width: 90%;
@@ -1268,6 +1275,12 @@ input:focus {
   right: 1px;
   font-weight: 700;
   font-size: 1em;
+}
+.inputAbutton > button:hover {
+  background-color: #e2e8f0;
+  transition: all 0.5s ease-in-out;
+
+  cursor: pointer;
 }
 .copyRightTHing {
   text-align: center;
@@ -1329,6 +1342,7 @@ input:focus {
     position: relative;
     width: min(40vw, 35em);
     padding: 1.3em;
+    color: white;
   }
   .inputAbutton > button {
     padding: 0.9em;
