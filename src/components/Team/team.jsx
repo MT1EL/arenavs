@@ -56,8 +56,8 @@ function Team() {
                   <div className="content">
                     <img
                       src={item.url}
-                      alt="images of team members"
                       className="teamImages"
+                      alt="team members"
                     />
                     <p className="memberName">{item.name}</p>
                     <p className="memberPosition">{item.position}</p>
@@ -91,6 +91,7 @@ function Team() {
                   <a
                     href={item.linkedinUrl}
                     target="_blank"
+                    rel="noreferrer"
                     style={{ textDecoration: "none" }}
                   >
                     <svg

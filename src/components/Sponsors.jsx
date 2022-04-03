@@ -47,7 +47,13 @@ function Sponsors() {
       </svg>
       <div className="sponsorsGrid">
         {sponsorsData.map((item) => {
-          return <img src={item.link} className="sponsorsImage" />;
+          return (
+            <img
+              src={item.link}
+              alt="sponsor icons"
+              className="sponsorsImage"
+            />
+          );
         })}
       </div>
     </section>

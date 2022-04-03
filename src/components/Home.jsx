@@ -17,7 +17,7 @@ function Home(props) {
         </div>
         <img
           src="https://arenavs.com/spartan.png"
-          alt="solider picture"
+          alt="solider"
           className="firstSoldire"
         />
       </div>
@@ -39,13 +39,16 @@ function Home(props) {
             href="https://apps.apple.com/us/app/arena-master/id1527871139"
             className="appleStore"
           >
-            <img src="https://arenavs.com/appstore.svg" />
+            <img src="https://arenavs.com/appstore.svg" alt="appstore link" />
           </a>
           <a
             href="https://play.google.com/store/apps/details?id=com.Sambrela.ArenaMaster&hl=en&gl=US"
             className="appStore"
           >
-            <img src="https://arenavs.com/googleplay.svg" />
+            <img
+              src="https://arenavs.com/googleplay.svg"
+              alt="googleplay link"
+            />
           </a>
         </div>
         {/* </div> */}

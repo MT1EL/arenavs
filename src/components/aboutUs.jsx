@@ -50,7 +50,7 @@ function AboutUs() {
           <img
             className="gridImage"
             src="https://arenavs.com/about-1.png"
-            alt="image of mobiles with arenavs opened"
+            alt="mobiles with arenavs opened"
           />
         </div>
         <div className="grid">

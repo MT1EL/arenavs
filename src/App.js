@@ -10,8 +10,6 @@ import Team from "./components/Team/team";
 import Sponsors from "./components/Sponsors";
 import Advisors from "./components/Advisors";
 import Footer from "./components/footer";
-const header = ["pool", "amt Price", "raised", "procent", "tokens"];
-const footer = ["TOTAL", "", "$1.032,480", "100,00%", "100 000 000"];
 function App() {
   const [darkMode, setDarkMode] = React.useState(false);
   return (

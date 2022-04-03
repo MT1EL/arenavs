@@ -2,9 +2,8 @@ import React from "react";
 
 function Footer() {
   return (
-    <section className="footer">
+    <section>
       <div className="relativeContainer">
-        {/* <div className="textAtouch"> */}
         <div className="textSide">
           <h1 className="textSideHeader">For partnerships, content creation</h1>
           <p className="textsideParagraph">
@@ -22,7 +21,6 @@ function Footer() {
           </div>
           <button>Get in touch</button>
         </div>
-        {/* </div> */}
       </div>
       <div className="footerOffooter">
         <div className="footerIcons">

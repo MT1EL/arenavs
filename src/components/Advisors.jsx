@@ -69,7 +69,11 @@ function Advisors() {
             <div className="AdvisorBorder">
               <div className="AdvisorContent">
                 <div className="AdvisorAbsolute">
-                  <img src={item.image} className="AdvisorImages" />
+                  <img
+                    src={item.image}
+                    alt="advisorImages"
+                    className="AdvisorImages"
+                  />
                   <p className="smallName" style={{ fontWeight: "300" }}>
                     {item.name}
                   </p>
