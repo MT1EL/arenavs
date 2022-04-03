@@ -85,7 +85,11 @@ function Team() {
             <div className="cardBorder">
               <div className="cardContent">
                 <div className="absolute">
-                  <img src={item.url} className="smallImage" />
+                  <img
+                    src={item.url}
+                    className="smallImage"
+                    alt="team members on cards"
+                  />
                   <p className="smallName">{item.name}</p>
                   <p className="smallPosition">{item.position}</p>
                   <a
