@@ -118,26 +118,12 @@
     border-radius: 10px;
     height: 15em;
 
-    margin-block: 1.5em;
+    margin-block: 2.5em;
   }
-  @keyframes cardAnim {
-    0% {
-      height: 90%;
-      width: 90%;
-    }
 
-    100% {
-      width: 100%;
-      height: 100%;
-    }
-  }
   .cardBorder:hover {
-    animation-name: cardAnim;
-    animation-duration: 0.5s;
-
-    margin-block: 0em;
-    width: 100%;
-    height: 100%;
+    transform: scale(1.1);
+    transition: transform 200ms ease-out;
   }
   .cardContent {
     background-color: white;

@@ -701,7 +701,6 @@ section {
 
 .slideImage {
   position: relative;
-
   width: 90%;
   margin: auto;
   background-color: white;
@@ -1092,24 +1091,10 @@ h3 {
     font-weight: 200;
     margin-bottom: 1em;
   }
-  @keyframes cardAnim {
-    0% {
-      height: 70%;
-      width: 90%;
-    }
 
-    100% {
-      width: 100%;
-      height: 100%;
-    }
-  }
   .AdvisorBorder:hover {
-    animation-name: cardAnim;
-    animation-duration: 0.5s;
-
-    margin-block: 0em;
-    width: 100%;
-    height: 100%;
+    transform: scale(1.06);
+    transition: transform 300ms ease-out;
   }
 }
 
