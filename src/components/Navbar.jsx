@@ -1,5 +1,5 @@
 import React from "react";
-
+import logo from "../images/logo.svg";
 function Navbar({ darkMode, setDarkMode }) {
   let navbarLinks = [
     { name: "Home", id: "#home" },
@@ -27,24 +27,20 @@ function Navbar({ darkMode, setDarkMode }) {
     setTargeted(props);
     setMobileNav(!mobileNav);
   }
-  console.log(mobileNav);
+
   return (
     <div>
       <div className="navbar">
         <div className="innerNav">
           <div className="bars" onClick={() => setMobileNav(!mobileNav)}></div>
           <a href="http://localhost:3000/">
-            <img
-              src="https://arenavs.com/logo.svg"
-              alt="arenavs logo"
-              className="logo"
-              id="Home"
-            />
+            <img src={logo} alt="arenavs logo" className="logo" id="Home" />
           </a>
           <div className="links">
             {navbarLinks.map((item) => {
               return (
                 <a
+                  key={item.id}
                   href={item.id}
                   className={item.name === targeted ? "lis clicked" : "lis"}
                   onClick={() => handleClick(item.name)}

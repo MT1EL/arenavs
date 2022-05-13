@@ -1,11 +1,17 @@
+import checked from "./RoadmapImages/check.png";
+import unChecked from "./RoadmapImages/uncheck.png";
+import bear from "./RoadmapImages/bear.png";
+import fox from "./RoadmapImages/fox.png";
+import wolf from "./RoadmapImages/wolf.png";
+import kib from "./RoadmapImages/kib.png";
 export const data = [
   {
     icon: "firstHalfIcon",
     imageSite: "left",
     id: 1,
-    checksrc: "https://arenavs.com/check.png",
-    unchecksrc: "https://arenavs.com/uncheck.png",
-    animalUrl: "https://arenavs.com/bear.png",
+    checksrc: checked,
+    unchecksrc: unChecked,
+    animalUrl: bear,
     checkTexts: [
       "Lite Paper",
       "White Paper",
@@ -21,9 +27,9 @@ export const data = [
     id: 2,
     imageSite: "right",
 
-    checksrc: "https://arenavs.com/check.png",
-    unchecksrc: "https://arenavs.com/uncheck.png",
-    animalUrl: "https://arenavs.com/fox.png",
+    checksrc: checked,
+    unchecksrc: unChecked,
+    animalUrl: fox,
     checkTexts: false,
     uncheckTexts: [
       "Public Sale",
@@ -39,9 +45,9 @@ export const data = [
     id: 3,
     imageSite: "left",
 
-    checksrc: "https://arenavs.com/check.png",
-    unchecksrc: "https://arenavs.com/uncheck.png",
-    animalUrl: "https://arenavs.com/wolf.png",
+    checksrc: checked,
+    unchecksrc: unChecked,
+    animalUrl: wolf,
     checkTexts: false,
     uncheckTexts: [
       "NFT Marketplace and NFT Rewards",
@@ -56,9 +62,9 @@ export const data = [
     icon: "secodHalfIcon",
     id: 4,
     imageSite: "right",
-    checksrc: "https://arenavs.com/check.png",
-    unchecksrc: "https://arenavs.com/uncheck.png",
-    animalUrl: "https://arenavs.com/kib.png",
+    checksrc: checked,
+    unchecksrc: unChecked,
+    animalUrl: kib,
     checkTexts: false,
     uncheckTexts: [
       "Game rewards for game asset & NFT",

@@ -1,5 +1,14 @@
 import React from "react";
-
+import firstImage from "../images/Home&About/about-1.png";
+import secondImage from "../images/Home&About/about-2.png";
+import Token1 from "../images/Home&About/1.svg";
+import Token2 from "../images/Home&About/2.svg";
+import Token3 from "../images/Home&About/3.svg";
+import Token4 from "../images/Home&About/4.svg";
+import Token5 from "../images/Home&About/5.svg";
+import Token6 from "../images/Home&About/6.svg";
+import whitePaper from "../images/Home&About/whitepaper.svg";
+import deck from "../images/Home&About/deck.svg";
 function AboutUs() {
   return (
     <section className="AboutSection" id="AboutUs">
@@ -49,7 +58,7 @@ function AboutUs() {
           </div>{" "}
           <img
             className="gridImage"
-            src="https://arenavs.com/about-1.png"
+            src={firstImage}
             alt="mobiles with arenavs opened"
           />
         </div>
@@ -61,7 +70,7 @@ function AboutUs() {
           </p>
           <img
             className="gridImage image2"
-            src="https://arenavs.com/about-2.png"
+            src={secondImage}
             alt="arenavs soliders"
           />
         </div>
@@ -74,45 +83,39 @@ function AboutUs() {
             <div className="items">
               <div className="flex">
                 <div>
-                  <img src="https://arenavs.com/token/1.svg" alt="firstToken" />
+                  <img src={Token1} alt="firstToken" />
                 </div>
                 <p>Competing in PVE battles to win leaderboard prizes</p>
               </div>
               <div className="flex">
                 <div>
-                  <img
-                    src="https://arenavs.com/token/2.svg"
-                    alt="secondToken"
-                  />
+                  <img src={Token2} alt="secondToken" />
                 </div>
                 <p>Competing in PVP battles against players</p>
               </div>
 
               <div className="flex">
                 <div>
-                  <img src="https://arenavs.com/token/3.svg" alt="thirdToken" />
+                  <img src={Token3} alt="thirdToken" />
                 </div>
                 <p>NFT Rewards</p>
               </div>
               <div className="flex">
                 <div>
-                  <img src="https://arenavs.com/token/4.svg" alt="fifthToken" />
+                  <img src={Token4} alt="fifthToken" />
                 </div>
                 <p>Single Asset staking</p>
               </div>
               <div className="flex">
                 <div>
-                  <img src="https://arenavs.com/token/5.svg" alt="sixthToken" />
+                  <img src={Token5} alt="sixthToken" />
                 </div>
                 <p>In-game rewards</p>
               </div>
 
               <div className="flex">
                 <div>
-                  <img
-                    src="https://arenavs.com/token/6.svg"
-                    alt="seventhToken"
-                  />
+                  <img src={Token6} alt="seventhToken" />
                 </div>
                 <p>In-game bonuses</p>
               </div>
@@ -121,12 +124,12 @@ function AboutUs() {
         </div>
         <div className="paperArenaCards">
           <img
-            src="https://arenavs.com/whitepaper.svg"
+            src={whitePaper}
             alt="whitePaper"
             href="https://drive.google.com/file/d/15y0zXMYYsKLTVZeGApapIDKnw4J4X_hV/view"
           />
           <img
-            src="https://arenavs.com/deck.svg"
+            src={deck}
             alt="arena master dec dsadas"
             href="https://drive.google.com/file/d/1XVRxQTqd9h2_kf2dDj7KYOKoEx3CRpVe/view"
           />
@@ -137,7 +140,7 @@ function AboutUs() {
           <iframe
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/HDZNiz30cCM"
+            src="https://www.youtube.com/embed/DC9RGT7PUD0"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

@@ -119,6 +119,7 @@
     height: 15em;
 
     margin-block: 2.5em;
+    transition: 200ms ease-out;
   }
 
   .cardBorder:hover {

@@ -1,16 +1,24 @@
 import React from "react";
-
+import sponsor1 from "../images/sponsorsImage/bot.svg";
+import sponsor2 from "../images/sponsorsImage/cheesus.png";
+import sponsor3 from "../images/sponsorsImage/coinracer.png";
+import sponsor4 from "../images/sponsorsImage/cscva.png";
+import sponsor5 from "../images/sponsorsImage/dao.png";
+import sponsor6 from "../images/sponsorsImage/enjin.png";
+import sponsor7 from "../images/sponsorsImage/gamex.png";
+import sponsor8 from "../images/sponsorsImage/land.png";
+import sponsor9 from "../images/sponsorsImage/sambrela.png";
 function Sponsors() {
   const sponsorsData = [
-    { link: "https://arenavs.com/partners/sambrela.png", text: " " },
-    { link: "https://arenavs.com/partners/cheesus.png", text: " " },
-    { link: "https://arenavs.com/partners/gamex.png", text: " " },
-    { link: "https://arenavs.com/partners/coinracer.png", text: " " },
-    { link: "https://arenavs.com/partners/land.png", text: " " },
-    { link: "https://arenavs.com/partners/bot.svg", text: "" },
-    { link: "https://arenavs.com/partners/cscva.png", text: "Sphere DAO" },
-    { link: "https://arenavs.com/partners/dao.png", text: " " },
-    { link: "https://arenavs.com/partners/enjin.png", text: " " },
+    { link: sponsor1, text: " " },
+    { link: sponsor2, text: " " },
+    { link: sponsor3, text: " " },
+    { link: sponsor4, text: " " },
+    { link: sponsor5, text: " " },
+    { link: sponsor6, text: "" },
+    { link: sponsor7, text: "Sphere DAO" },
+    { link: sponsor8, text: " " },
+    { link: sponsor9, text: " " },
   ];
 
   return (

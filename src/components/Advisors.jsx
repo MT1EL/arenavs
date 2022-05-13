@@ -2,22 +2,26 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCards } from "swiper";
 
+import Advisor1 from "../images/AdvisorsImage/haniff.png";
+import Advisor2 from "../images/AdvisorsImage/armety.png";
+import Advisor3 from "../images/AdvisorsImage/dominic.png";
+
 function Advisors() {
   const AdvisorsData = [
     {
-      image: "https://arenavs.com/team/haniff.png",
+      image: Advisor1,
       name: "Haniff Knight",
       position: "Blockhain Partner Game xChange",
       linkedinUrl: "https://twitter.com/_ThisisHaniff",
     },
     {
-      image: "https://arenavs.com/team/armety.png",
+      image: Advisor2,
       name: "Armety Akopov",
       position: "co-Founder @BotPlanet",
       linkedinUrl: "#Home",
     },
     {
-      image: "https://arenavs.com/team/dominic.png",
+      image: Advisor3,
       name: "Dominic Ryder",
       position: "Founder and CEO of vEMPIRE DAO",
       linkedinUrl: "https://twitter.com/dominicvemp",

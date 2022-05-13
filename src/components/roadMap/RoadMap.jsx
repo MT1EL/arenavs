@@ -1,5 +1,5 @@
 import React from "react";
-//import timelineElements from './timelineElements'
+
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -122,52 +122,3 @@ function RoadMap() {
 }
 
 export default RoadMap;
-
-// <section className="roadMapSection">
-// <VerticalTimeline>
-//   {cards.map((item, index) => {
-//     return (
-//       <VerticalTimelineElement
-//         className="vertical-timeline-element--work vertical-timeline vertical-timeline-custom-line"
-//         icon={"0" + (index + 1)}
-//         iconClassName={
-//           index === 0 || index === 1 ? "icon" : "secondIcons"
-//         }
-//         contentStyle={{
-//           background:
-//             "linear-gradient(45deg, rgb(5, 18, 27) 0%, rgb(5, 19, 28) 100%)",
-//           color: "#fff",
-//         }}
-//         //iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-//       >
-//         <div>
-//           <div>
-//             {item.checkTexts &&
-//               item.checkTexts.map((text) => {
-//                 return (
-//                   <div>
-//                     <div className="checkFlex">
-//                       <img src={item.checksrc} alt="check" />
-//                       <h3>{text}</h3>
-//                     </div>
-//                   </div>
-//                 );
-//               })}
-//             {item.uncheckTexts.map((text) => {
-//               return (
-//                 <div>
-//                   <div className="checkFlex">
-//                     <img src={item.unchecksrc} alt="check" />
-//                     <h3>{text}</h3>
-//                   </div>
-//                 </div>
-//               );
-//             })}
-//           </div>
-//           <img src={item.animalUrl} alt="animals" className="bearImg" />
-//         </div>
-//       </VerticalTimelineElement>
-//     );
-//   })}
-// </VerticalTimeline>
-// </section>

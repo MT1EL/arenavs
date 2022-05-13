@@ -1,7 +1,11 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
-function Home(props) {
+import spartan from "../images/Home&About/spartan.png";
+import african from "../images/Home&About/african.png";
+import appStore from "../images/Home&About/appstore.svg";
+import GooglePlay from "../images/Home&About/GooglePlay.png";
+function Home() {
   return (
     <section className="homeSection">
       <div className="homeHeader" id="home">
@@ -15,43 +19,33 @@ function Home(props) {
             Play-to-Earn modes
           </p>
         </div>
-        <img
-          src="https://arenavs.com/spartan.png"
-          alt="solider"
-          className="firstSoldire"
-        />
+        <img src={spartan} alt="solider" className="firstSoldire" />
       </div>
       <div className="secondHome">
         <div className="discoverButton">
-          <button href="#home">Discover more </button>
+          <a href="#AboutUs">
+            <button>Discover more </button>
+          </a>
           <div>
             <FontAwesomeIcon icon={faAngleRight} />
           </div>
         </div>
-        {/* <div className="homeTwoAbsolute"> */}
-        <img
-          src="https://arenavs.com/african.png"
-          alt="second solider"
-          className="secondSolider"
-        />
+
+        <img src={african} alt="second solider" className="secondSolider" />
         <div className="downloadGrid">
           <a
             href="https://apps.apple.com/us/app/arena-master/id1527871139"
             className="appleStore"
           >
-            <img src="https://arenavs.com/appstore.svg" alt="appstore link" />
+            <img src={appStore} alt="appstore link" />
           </a>
           <a
             href="https://play.google.com/store/apps/details?id=com.Sambrela.ArenaMaster&hl=en&gl=US"
             className="appStore"
           >
-            <img
-              src="https://arenavs.com/googleplay.svg"
-              alt="googleplay link"
-            />
+            <img src={GooglePlay} alt="googleplay link" />
           </a>
         </div>
-        {/* </div> */}
       </div>
     </section>
   );

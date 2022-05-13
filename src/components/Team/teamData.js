@@ -1,6 +1,18 @@
+import bolaji from "./teamImages/bolaji.jpeg";
+import davit from "./teamImages/davit.png";
+import george from "./teamImages/george.png";
+import giorgi from "./teamImages/giorgi.png";
+import giorgii from "./teamImages/giorgii.png";
+import giorgiii from "./teamImages/giorgiii.png";
+import grigol from "./teamImages/grigol.png";
+import levan from "./teamImages/levan.png";
+import marie from "./teamImages/marie.png";
+import nicka from "./teamImages/nicka.png";
+import ziga from "./teamImages/ziga.jpeg";
+
 export const TeamData = [
   {
-    url: "https://arenavs.com/team/grigol.png",
+    url: grigol,
     name: "Grigol Samkharadze",
     position: "CTO & Founder",
     linkedinUrl: "https://www.linkedin.com/in/grigol-samkharadze-719769118/",
@@ -12,65 +24,65 @@ export const TeamData = [
     linkedinUrl: "https://www.linkedin.com/in/mikheil-didebulidze-77548444/",
   },
   {
-    url: "https://arenavs.com/team/ziga.jpeg",
+    url: ziga,
     name: "Ziga Potrebujes",
     position: "Community Builder",
     linkedinUrl: "https://www.linkedin.com/in/ziga-potrebujes",
   },
   {
-    url: "https://arenavs.com/team/davit.png",
+    url: davit,
     name: "Davit Skhiladze",
     position: "Founder & Game dev lead",
     linkedinUrl:
       "https://www.linkedin.com/in/davit-skhiladze-8194411b3/?challengeId=AQHYMuxjO_fXbwAAAX_qbJ0jdBduIcf3LCrv5X-dYhbUixb2r7w-9SCc3BNF9nncKcjKWyrQ1625IchjuqRuSwNuNv_kJt-IfA&submissionId=45d499c1-c716-e216-2f68-226f60410877",
   },
   {
-    url: "https://arenavs.com/team/marie.png",
+    url: marie,
     name: "Marie Giorgobiani",
     position: "COO",
     linkedinUrl: "https://www.linkedin.com/in/marie-giorgobiani-3b7b571a8/",
   },
   {
-    url: "https://arenavs.com/team/bolaji.jpeg",
+    url: bolaji,
     name: "Bolaji Oderinlo",
     position: "BlockChain copywriter",
     linkedinUrl:
       "https://www.linkedin.com/in/oderinlo-bolaji/?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAACpJq5cBgCKxxPH6UPR__ha58kBu7zAgI3I",
   },
   {
-    url: "https://arenavs.com/team/giorgi.png",
+    url: giorgi,
     name: "Giorgi Iasagashvili",
     position: "Developer",
     linkedinUrl: "https://www.linkedin.com/in/giorgi-iasaghashvili/",
   },
   {
-    url: "https://arenavs.com/team/levan.png",
+    url: levan,
     name: "Levan Kodua",
     position: "3D Animator",
     linkedinUrl: "https://www.linkedin.com/in/levan-kodua/",
   },
   {
-    url: "https://arenavs.com/team/george.png",
+    url: george,
     name: "George Pirtskhalava",
     position: "2D 3D Artist",
     linkedinUrl: "https://www.linkedin.com/in/george-phirtskhalava-45273b1b3/",
   },
 
   {
-    url: "https://arenavs.com/team/nicka.png",
+    url: nicka,
     name: "Nicka Shelia",
     position: "2D 3D Artist",
     linkedinUrl: "https://arenavs.com/",
   },
 
   {
-    url: "https://arenavs.com/team/giorgii.png",
+    url: giorgii,
     name: "Giorgi Svanishvili",
     position: "2D Artist",
     linkedinUrl: "https://www.linkedin.com/in/giorgi-svanishvili-8a7a1b190/",
   },
   {
-    url: "https://arenavs.com/team/giorgiii.png",
+    url: giorgiii,
     name: "Giorgi Kiknadze",
     position: "3D Artist",
     linkedinUrl: "https://www.linkedin.com/in/giorgi-svanishvili-8a7a1b190/",
